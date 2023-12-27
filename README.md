@@ -1,5 +1,17 @@
-# CDN-FADEC
+# Run development server
+## installer node
+https://nodejs.org/en
+## lancer le serv
+npm run dev
 
-## Lien vers le guide :
+## Collaborateur
 
-https://pyracantharia.github.io/CDN-FADEC/
+PERROUAS Thibault
+
+MBARAPA-SOKAMBI Christopher
+
+GARCHI Adam
+
+
+Georges Jonathan NGUEKOUMOU
+

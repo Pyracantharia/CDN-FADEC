@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
 	<title>Design guide</title>
 	<meta charset="utf-8" />
+	<meta name="CDN-FADEC" content="1.0.0"> <!-- Déclaration de la version du framework -->
 	<link rel="stylesheet" type="text/css" href="dist/main.css" />
 	<style>
 		body>section {
@@ -33,7 +33,6 @@
 </head>
 
 <body>
-	<script src="./src/js/main.js" type="module"></script>
 	<section>
 		<h1>.button</h1>
 		<hr />
@@ -178,43 +177,21 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<div class="tabs">
+        <button class="tablinks" data-tab="Tab1">Tab 1</button>
+        <button class="tablinks" data-tab="Tab2">Tab 2</button>
 
-		<div class="tabs">
-			<button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
-			<button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+        <div class="tabcontent" id="Tab1">
+            <h3>Contenu de l'onglet 1</h3>
+            <p>Ceci est le contenu de l'onglet 1.</p>
+        </div>
 
-			<div class="tabcontent" id="Tab1">
-				<h3>Contenu de l'onglet 1</h3>
-				<p>Ceci est le contenu de l'onglet 1.</p>
-			</div>
-
-			<div class="tabcontent" id="Tab2">
-				<h3>Contenu de l'onglet 2</h3>
-				<p>Ceci est le contenu de l'onglet 2.</p>
-
-			</div>
-		</div>
-		<script>
-
-			function openTab(evt, tabName) {
-				var i, tabcontent, tablinks;
-				tabcontent = document.getElementsByClassName("tabcontent");
-				for (i = 0; i < tabcontent.length; i++) {
-					tabcontent[i].style.display = "none";
-				}
-				tablinks = document.getElementsByClassName("tablinks");
-				for (i = 0; i < tablinks.length; i++) {
-					tablinks[i].className = tablinks[i].className.replace(" active", "");
-				}
-				document.getElementById(tabName).style.display = "block";
-				evt.currentTarget.className += " active";
-			}
-
-		</script>
-
-
-	</section>
+        <div class="tabcontent" id="Tab2">
+            <h3>Contenu de l'onglet 2</h3>
+            <p>Ceci est le contenu de l'onglet 2.</p>
+        </div>
+    </div>
+</section>
 	<br><br><br>
 	<section>
 		<h1>Dropdown</h1>
@@ -503,6 +480,7 @@
 	<section>
 		<h1>Outil de partage de plans ou de dessins</h1>
 	</section>
+	<script src="./src/js/main.js" type="module"></script>
 
 </body>
 
