@@ -15,6 +15,8 @@ function initModal() {
         modalUsed = true;
     } else {
         modalUsed = false;
+        window.modalUsed = modalUsed;
+        window.dispatchEvent(new CustomEvent('modalUsed', { detail: modalUsed }));
     }
 }
 

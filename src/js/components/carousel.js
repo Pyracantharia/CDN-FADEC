@@ -86,5 +86,8 @@ window.onload = function () {
     } else {
         carouselUsed = false;
         window.carouselUsed = carouselUsed;
+        window.dispatchEvent(new CustomEvent('carouselUsed', { detail: carouselUsed }));
+
     }
+
 }
