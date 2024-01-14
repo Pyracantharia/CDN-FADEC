@@ -1,23 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
     function initModal() {
-        var modalUsed;
         var modals = document.querySelectorAll(".modal");
         var buttons = document.querySelectorAll(".openModal");
         var spans = document.querySelectorAll(".close");
 
-        buttons.forEach(function (btn, index) {
+        modals.forEach(function (modal) {
+            modal.style.display = "none";
+        });
+
+        buttons.forEach(function (btn) {
             btn.onclick = function () {
-                modals[index].style.display = "block";
-            }
+                var modalId = btn.getAttribute("data-modal");
+                var modal = document.getElementById(modalId);
+                modal.style.display = "block";
+            };
         });
 
-        spans.forEach(function (span, index) {
+        spans.forEach(function (span) {
             span.onclick = function () {
-                modals[index].style.display = "none";
-            }
+                var modalId = span.closest(".modal").id;
+                var modal = document.getElementById(modalId);
+                modal.style.display = "none";
+            };
         });
-
-        modalUsed = true;
     }
 
     // Appel de la fonction pour initialiser le modal
