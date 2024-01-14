@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
     function initModal() {
         var modals = document.querySelectorAll(".modal");
         var buttons = document.querySelectorAll(".openModal");
@@ -27,4 +26,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Appel de la fonction pour initialiser le modal
     initModal();
-});
