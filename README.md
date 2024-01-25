@@ -2,6 +2,9 @@
 ## installer node
 https://nodejs.org/en
 ## lancer le serv
+
+npm install
+
 npm run dev
 
 ## Collaborateur
