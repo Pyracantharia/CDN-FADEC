@@ -3,6 +3,8 @@
 https://nodejs.org/en
 ## lancer le serv
 
+Se placer à la racine puis :
+
 npm install
 
 npm run dev
