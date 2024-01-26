@@ -47,14 +47,14 @@
 	// Modificateur d'outline
 	&-outline {
 	  --button-bg-color: transparent;
-	  --button-hover-bg-color: currentColor;
-	  --button-hover-text-color: var(--white);
+	//   --button-hover-bg-color: var(--white);
+	  --button-hover-text-color: var(--black);
 	  border: solid thin currentColor;
 	}
   
 	// Hover state
 	&:hover {
-	  background-color: var(--button-bg-hover-color);
+	  background-color: var(--white);
 	  color: var(--button-hover-text-color);
 	}
   }

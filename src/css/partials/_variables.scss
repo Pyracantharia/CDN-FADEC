@@ -9,6 +9,7 @@ $primary-font: 'Arial', sans-serif;
 :root {
 	/* Couleurs */
 	--white: #{$white};
+	--black: #{$black};
 	--blue: #{$blue};
 	--blue-darker: #{darken($blue, 10%)};
 	--grey: #{$grey};
