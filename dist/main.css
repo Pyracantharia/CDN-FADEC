@@ -3,6 +3,7 @@
 :root {
   /* Couleurs */
   --white: #fff;
+  --black: #000;
   --blue: #0d6efd;
   --blue-darker: #0257d5;
   --grey: #6c757d;
@@ -262,12 +263,11 @@ body {
 }
 .button-outline {
   --button-bg-color: transparent;
-  --button-hover-bg-color: currentColor;
-  --button-hover-text-color: var(--white);
+  --button-hover-text-color: var(--black);
   border: solid thin currentColor;
 }
 .button:hover {
-  background-color: var(--button-bg-hover-color);
+  background-color: var(--white);
   color: var(--button-hover-text-color);
 }
 
